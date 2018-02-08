@@ -1,0 +1,74 @@
+@import "function";
+@import "var";
+@import "mixin";
+
+
+//评论模态框
+.comments-modal {
+  position: fixed;
+  max-width: 750px;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 101;
+  display: flex;
+  align-items: flex-end;
+  .wrapper{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    padding:px2rem(20px) px2rem(30px) px2rem(10px);
+  }
+  .textarea {
+    position: relative;
+    height: px2rem(170px);
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    outline: none;
+    padding:px2rem(10px);
+    font-size: px2rem(28px);
+    overflow-y: auto;
+    z-index:2;
+    .user{
+      color: $main_color;
+      font-weight: 700;
+    }
+  }
+  .placeholder{
+    position: absolute;
+    top: px2rem(32px);
+    left:px2rem(48px);
+    color: #666666;
+    z-index:1;
+    font-size: px2rem(28px);
+  }
+  .error{
+    color: red;
+    font-size: px2rem(23px);
+    padding-left: 5px;
+  }
+  .operates{
+    height:px2rem(80px);
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    .left {
+      display: flex;
+      color: #888888;
+      align-items: center;
+      height: 100%;
+      .aite{
+        display: flex;
+        align-items:center;
+        height: 100%;
+      }
+      .icon-icon_aiye {
+        height: px2rem(35px);
+        margin: 0 px2rem(30px) 0 px2rem(10px);
+      }
+    }
+  }
+}

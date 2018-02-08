@@ -1,0 +1,85 @@
+@import "function";
+@import "var";
+@import "mixin";
+
+.link-list{
+  &.last-noborder{
+    .item:last-of-type{
+      .content::before{
+        display: none;
+      }
+    }
+  }
+  .item{
+    display: flex;
+    align-items:center;
+    height:px2rem(100px);
+    background-color: #fff;
+    &.no-border{
+      .content{
+        &:before{
+          display: none;
+        }
+      }
+    }
+    .tit-icon {
+      display: flex;
+      width: px2rem(100px);
+      height:px2rem(100px);
+      font-size: px2rem(45px);
+      color: #818181;
+      align-items:center;
+      justify-content:center;
+      flex: 0 0 px2rem(100px);
+      &.icon-xiaoxi1,
+      &.icon-wenzhang,
+      &.icon-wenda
+      {
+        font-size: px2rem(50px);
+      }
+
+    }
+    .content {
+      height: 100%;
+      display: flex;
+      align-items:center;
+      justify-content:space-between;
+      padding-right:px2rem(20px);
+      flex: 1;
+      font-size: px2rem(35px);
+      color: #333;
+      line-height: 1;
+      @include borderPart(#ddd,bottom );
+      del{
+        color: #999;
+      }
+      div{
+        //padding-top: 4px;
+      }
+      i{
+        font-size: px2rem(45px);
+        color: #818181;
+      }
+    }
+  }
+  &.myinfo{
+    .item {
+      padding-left: px2rem(20px);
+      min-height: px2rem(100px);
+      height:auto;
+      font-size: px2rem(27px);
+      .content{
+        padding:px2rem(20px) px2rem(20px) px2rem(20px) px2rem(10px);
+        min-height: px2rem(100px);
+        &>div:nth-child(1){
+          flex: 0 0 5em;
+        }
+      }
+      .my-headimg{
+        width:px2rem(100px);
+        height:px2rem(100px);
+        border-radius: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "function";
+@import "var";
+@import "mixin";
+
+.btn {
+  padding:px2rem(10px) px2rem(30px);
+  font-size: px2rem(25px);
+  background-color: $main_color;
+  color: #ffffff;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  &:active{
+    background-color: $main_color - 20;
+  }
+  &[disabled]{
+    background-color: #eeeeee;
+    color: #aaa;
+  }
+  &.login{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    height:px2rem(90px);
+    border-radius: px2rem(45px);
+    font-size: px2rem(35px);
+    margin-top:px2rem(100px);
+  }
+}

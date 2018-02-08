@@ -1,0 +1,51 @@
+@import "function";
+@import "var";
+@import "mixin";
+
+.search-wrapper {
+  height:px2rem(75px);
+  &>div{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    max-width: 750px;
+    height: px2rem(75px);
+    display: flex;
+    background-color: #f6f6f6;
+    .inp{
+      flex: 1;
+      display: flex;
+      align-items:center;
+      justify-content:center;
+      padding: 0 0 0 px2rem(20px);
+      position: relative;
+      i{
+        position: absolute;
+        left:px2rem(40px);
+        top:px2rem(15px);
+      }
+      input{
+        width: 100%;
+        background-color: #fff;
+        height:px2rem(60px);
+        display: flex;
+        align-items:center;
+        border-radius: px2rem(30px);
+        border: 1px solid #ddd;
+        outline: none;
+        padding-left:px2rem(70px);
+        font-size: px2rem(28px);
+      }
+    }
+    button{
+      width: 4em;
+      float: 0 0 4em;
+      background-color: transparent;
+      color: $main_color;
+      font-size:px2rem(28px);
+      border: none;
+      outline: none;
+    }
+  }
+}

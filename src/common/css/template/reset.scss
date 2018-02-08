@@ -1,0 +1,93 @@
+@import "function";
+@import "var";
+@import "mixin";
+
+[v-cloak]{
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    outline: none;
+  }
+  &:focus{
+    outline: none;
+    opacity: 0.9;
+  }
+  &:active{
+    outline: none;
+  }
+  &:link{
+    outline: none;
+  }
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.clearfix {
+  *zoom: 1;
+  &:after, &:before {
+    display: block;
+    content: "clear";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+body {
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "PingFang SC Regular", "Microsoft YaHei";
+}
+
+select, input, textarea {
+  font-family: "PingFang SC Regular", "Microsoft YaHei";
+}
+
+ul, dl, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.cur, button {
+  cursor: pointer;
+}

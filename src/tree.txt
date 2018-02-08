@@ -1,0 +1,158 @@
+卷 Web 的文件夹 PATH 列表
+卷序列号为 2422-EC74
+G:.
+│  App.vue
+│  main.js
+│  tree.txt
+│  
+├─common
+│  ├─css
+│  │  │  base.scss
+│  │  │  
+│  │  └─template
+│  │          admin.scss
+│  │          app.scss
+│  │          button.scss
+│  │          checkbox-radio-switch.scss
+│  │          comments-list.scss
+│  │          comments-modal.scss
+│  │          footer-comments.scss
+│  │          footer-nav.scss
+│  │          frames.scss
+│  │          function.scss
+│  │          header-nav.scss
+│  │          home.scss
+│  │          iframe-modal.scss
+│  │          link-list.scss
+│  │          login.scss
+│  │          main.scss
+│  │          mixin.scss
+│  │          pop.scss
+│  │          post.scss
+│  │          project.scss
+│  │          reset.scss
+│  │          scroll-loading.scss
+│  │          search-wrapper.scss
+│  │          side-bar.scss
+│  │          swiper.scss
+│  │          tweet.scss
+│  │          var.scss
+│  │          
+│  ├─img
+│  │  │  refresh.svg
+│  │  │  
+│  │  └─dm
+│  │          banner.jpg
+│  │          login-bg.jpg
+│  │          project-logo.svg
+│  │          
+│  └─js
+│      │  filters.js
+│      │  imgCompressBase64.js
+│      │  rem.js
+│      │  scroll.js
+│      │  
+│      └─api
+│              api.js
+│              
+├─components
+│  ├─comments-modal
+│  │      index.vue
+│  │      
+│  ├─footer-comments
+│  │      footer-comments.vue
+│  │      
+│  ├─footer-nav
+│  │      footer-nav.vue
+│  │      
+│  ├─header-nav
+│  │      header-nav.vue
+│  │      
+│  ├─iframe-modal
+│  │      index.js
+│  │      index.vue
+│  │      
+│  ├─pop
+│  │  └─msg
+│  │          msg.js
+│  │          msg.vue
+│  │          
+│  └─scroll
+│          scroll-loading.vue
+│          
+├─page
+│  │  login.vue
+│  │  
+│  ├─admin
+│  │  │  index.vue
+│  │  │  zuozhe.vue
+│  │  │  
+│  │  ├─myblog
+│  │  │      index.vue
+│  │  │      
+│  │  ├─myfollow
+│  │  │      index.vue
+│  │  │      
+│  │  ├─myfriends
+│  │  │      index.vue
+│  │  │      
+│  │  ├─myinfo
+│  │  │      index.vue
+│  │  │      
+│  │  ├─mymessage
+│  │  │      index.vue
+│  │  │      
+│  │  └─myset
+│  │          index.vue
+│  │          
+│  ├─comments
+│  │      comment-list.vue
+│  │      
+│  ├─detail
+│  │  ├─blog
+│  │  │      index.vue
+│  │  │      
+│  │  └─news
+│  │          index.vue
+│  │          
+│  ├─home
+│  │      home.vue
+│  │      
+│  ├─more
+│  │      index.vue
+│  │      
+│  ├─porject
+│  │  │  detail.vue
+│  │  │  index.vue
+│  │  │  
+│  │  └─list
+│  │          catalog_list.vue
+│  │          list.vue
+│  │          
+│  ├─post
+│  │      detail.vue
+│  │      index.vue
+│  │      
+│  ├─search
+│  │      index.vue
+│  │      
+│  ├─tweet
+│  │      detail.vue
+│  │      list.vue
+│  │      tweet-pub.vue
+│  │      
+│  └─user
+│          index.vue
+│          
+├─router
+│      index.js
+│      
+└─store
+    │  index.js
+    │  
+    └─modules
+            footer.js
+            msg-modal.js
+            openInfo.js
+            tweet.js
+            

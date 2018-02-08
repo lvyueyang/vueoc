@@ -1,0 +1,45 @@
+@import "function";
+@import "var";
+
+//多行溢出省略号
+@mixin lineclamp($number:2) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $number;
+  overflow: hidden;
+}
+
+@mixin refresh($width) {
+  color: $main_color;
+  display: inline-block;
+  width: $width;
+  height: $width;
+  background: url("./common/img/refresh.svg") no-repeat center center;
+  background-size: 100%;
+}
+
+@mixin borderPart($color,$position:null,$type:solid) {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 190%;
+    background-color: transparent;
+    top: 0;
+    transform-origin: 0 0;
+    transform: scale(0.5, 0.5);
+    box-sizing: border-box;
+    @if $position == null {
+      border: 1px $type $color;
+    } @else if $position == top {
+      border-top: 1px $type $color;
+    } @else if $position == left {
+      border-left: 1px $type $color;
+    } @else if $position == right {
+      border-right: 1px $type $color;
+    } @else if $position == bottom {
+      border-bottom: 1px $type $color;
+    }
+  }
+}

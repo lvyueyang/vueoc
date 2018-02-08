@@ -1,0 +1,81 @@
+@import "function";
+@import "var";
+@import "mixin";
+
+.project-filters {
+  position: relative;
+  z-index: 10;
+  height: px2rem(70px);
+  line-height: px2rem(70px);
+  background-color: #f2f2f2;
+  display: flex;
+
+  li {
+    flex: 1;
+    text-align: center;
+    color: #666666;
+    font-size: px2rem(28px);
+    border-bottom: 1px solid #dbdbdc;
+    &.active {
+      background-color: #fff;
+      border-bottom: 2px solid #21aa3d;
+      color: #21aa3d;
+    }
+  }
+
+}
+
+.project-view {
+  height: 100vh;
+  overflow-y: auto;
+  margin-top: px2rem(-145px);
+  padding-top: px2rem(145px);
+}
+
+.catalog-list {
+  overflow-y: auto;
+  height: 100%;
+  .link-list .item {
+    background-color: transparent;
+    padding-left: px2rem(20px);
+    .content {
+      font-size: px2rem(30px);
+    }
+  }
+}
+
+.project-list {
+  background-color: #fff;
+  height: 100%;
+  overflow: hidden;
+  .scroll-loading-wrapper {
+    .loadingUp {
+      top: -30px;
+    }
+    .wrapper{
+      overflow-x: hidden;
+    }
+  }
+  .item {
+    padding: px2rem(25px) px2rem(20px);
+    color: #333;
+    @include borderPart(#ccc, bottom);
+    display: block;
+    &:last-of-type{
+      &:before{
+        display: none;
+      }
+    }
+    & > div {
+      width: 100%;
+      overflow: hidden;
+    }
+    .title {
+      font-size: px2rem(40px);
+    }
+    .content {
+      font-size: px2rem(25px);
+      color: #999;
+    }
+  }
+}

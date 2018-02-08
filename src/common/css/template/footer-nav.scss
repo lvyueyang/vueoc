@@ -1,0 +1,55 @@
+@import "function";
+@import "var";
+@import "mixin";
+
+.footer-nav{
+  position: relative;
+  height:px2rem(100px);
+  background-color: #fff;
+  display: flex;
+  margin-top:px2rem(-100px);
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1.2;
+  z-index:99999;
+  a{
+    position: relative;
+    z-index:999999;
+    padding-top:px2rem(7px);
+    color: #575757;
+    height: 100%;
+    flex: 1;
+    text-align: center;
+    div{
+      padding-top: 2px;
+      font-size: px2rem(26px);
+    }
+    i{
+      font-size: px2rem(50px);
+      color: #575757;
+      &.active{
+        display: none;
+      }
+    }
+    &.tanyitan{
+      i{
+        font-size: px2rem(80px);
+        color: $main_color;
+        display: inline-block !important;
+      }
+    }
+    &.router-link-exact-active{
+      color: $main_color;
+      i{
+        color: $main_color;
+        &.iconfont{
+          display: none;
+        }
+        &.active{
+          display: inline-block;
+        }
+      }
+    }
+  }
+  @include borderPart(#dcdcdd,top);
+}

@@ -1,0 +1,15 @@
+@import "function";
+@import "var";
+@import "mixin";
+
+#app{
+  position: relative;
+  max-width: 750px;
+  display: block;
+  height: 100vh;
+  overflow: hidden;
+  & > .main-view{
+    height: 100vh;
+    padding-bottom:px2rem(100px);
+  }
+}

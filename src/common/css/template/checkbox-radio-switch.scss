@@ -1,0 +1,55 @@
+@import "function";
+@import "var";
+@import "mixin";
+
+.checkbox,.radio {
+  display: inline-block;
+  height: px2rem(35px);
+  position: relative;
+  input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    &:checked + i{
+      background-color: $main_color;
+      border-color: $main_color;
+      color: #ffffff;
+      &:before{
+        content: "\e626";
+        height: px2rem(19px);
+        font-size: px2rem(22px);
+      }
+    }
+  }
+  i{
+    top: 0;
+    left: 0;
+    width: px2rem(35px);
+    height: px2rem(35px);
+    border: 1px solid #888888;
+    border-radius: 3px;
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+  }
+  &.flex{
+    display: flex;
+    align-items:center;
+  }
+  label{
+    display: inline-block;
+    padding-left:px2rem(10px);
+    line-height: 1;
+  }
+}
+

@@ -1,0 +1,30 @@
+@import "function";
+@import "var";
+@import "mixin";
+
+.pop {
+  position: fixed;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  max-width: 750px;
+  z-index: 1000;
+  .pop-wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .msg-content{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding:px2rem(20px) px2rem(30px);
+    background-color: rgba(0,0,0,.5);
+    font-size: px2rem(28px);
+    color: #ffffff;
+    border-radius: 3px;
+  }
+}
+
